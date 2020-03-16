@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+require('dotenv').config()
+
 const Axios = axios.create({
     baseUrl: "http://localhost:8000/api/v1/",
     timeout: 5000,
