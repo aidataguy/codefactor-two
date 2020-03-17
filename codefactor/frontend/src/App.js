@@ -1,17 +1,31 @@
 import React from 'react';
-// import logo from './logo.svg';
 import './App.css';
+import Page from './components/Page';
 import Login from './components/Login';
-
-
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
-
-
   return (
-    <div className="App">
-        <Login />
-    </div>
+    <BrowserRouter>
+      <div>
+
+        <div className="vh-100">
+          <Switch>
+            <Route
+              exact
+              path="/"
+              component={Page}
+            />
+            <Route
+              exact
+              path="/Login"
+              component={Login}
+
+            />
+          </Switch>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
