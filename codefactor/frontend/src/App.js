@@ -6,8 +6,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div>
+    <BrowserRouter> 
 
         <div className="vh-100">
           <Switch>
@@ -24,7 +23,7 @@ function App() {
             />
           </Switch>
         </div>
-      </div>
+
     </BrowserRouter>
   );
 }

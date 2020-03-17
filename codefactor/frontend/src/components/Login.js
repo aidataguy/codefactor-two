@@ -23,16 +23,15 @@ class Login extends Component {
                 password: this.state.password,
 
             });
-            console.log("Response ", loginData)
+
             Axios.defaults.headers['Authorization'] = 'JWT' + loginData.access;
             localStorage.setItem('access_token', loginData.data.access);
             localStorage.setItem('refresh_token', loginData.data.refresh);
-
-            if (loginData.response === 200) {
-                console.log("Login SuccessFul")
+            console.log(localStorage.getItem('access_token'),  loginData.data.access)
+            if (localStorage.getItem('access_token') === loginData.data.access && localStorage.getItem('refresh_token') === loginData.data.refresh) {
                 this.props.history.push('/')
             } else {
-                this.props.history.push('/login')
+                this.props.history.push('/login') 
             }
         } catch (error) {
 

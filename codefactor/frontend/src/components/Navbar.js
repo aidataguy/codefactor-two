@@ -1,35 +1,53 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Header from './Header';
 
-// This will be imported just once.... in Page JS
+export default class Navbar extends Component {
+    constructor(props) {
+        super(props);
+    }
 
-// URL will not be here.... 
+render(){
+    return(
+        <React.Fragment>
+            <Header />
+            <nav id="header-navbar" className="navbar navbar-expand-lg py-4">
+                <div className="container">
+                    <a className="navbar-brand d-flex align-items-center text-white" href="/">
+                        <h3 className="font-weight-bolder mb-0">ROXY</h3>
+                    </a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="lnr lnr-menu"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbar-nav-header">
+                        <ul className="navbar-nav ml-auto">
+                            <li className="nav-item">
+                                <a className="nav-link" href="/">Home</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="about.html">About</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li className="nav-item">
+                                <a id="side-search-open" className="nav-link" href="#">
+                                    <span className="lnr lnr-magnifier"></span>
+                                </a>
+                            </li>
+                            <li className="nav-item only-desktop">
+                                <a className="nav-link" id="side-nav-open" href="#">
+                                    <span className="lnr lnr-menu"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </React.Fragment>
 
-// Define Components
-
-
-
-// Logic For Tab Population
-
-/*
-// Must be there - Header
-    1. Get List of Tabs -- Tabs will be like this....
-        a. Logo (clickable)
-        b. Blog
-        c. Work
-        d. Skills...
-        e. About Me...
-        f. Social Media...
-        g. YouTube Channel...
-        h. Contact Me
-
-    2. Get Content on basis of tab - Redirects can be used - Will be shown on main page or something
-
-//  Must be there - Footer & Copyright
-
-*/
-
-
-// Logic For Adding Comments - Disqus Probably..... 
-
-
-// Logic For Tags - This will be on sidebar probably or a cloud sorta thing... 
+        )
+    }
+}
