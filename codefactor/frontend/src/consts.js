@@ -7,6 +7,8 @@ export const pic1 = require("./Assets/images/photo-6.jpg");
 export const pic2 = require("./Assets/images/photo-2.jpg");
 
 export const client = require("./Assets/images/client.png");
+export const testi = require("./Assets/images/testi-1.jpg");
+
 export const unsplash = "https://unsplash.com/";
 
 

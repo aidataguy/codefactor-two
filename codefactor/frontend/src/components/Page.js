@@ -3,7 +3,7 @@ import Header from './Header';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-import { logo, mockup, testpic, pic, pic1, pic2, client, unsplash } from '../consts';
+import { logo, mockup, testpic, pic, pic1, pic2, client, unsplash, testi } from '../consts';
 
 
 // This will be the only page to be included into App JS
@@ -179,13 +179,13 @@ export default class Page extends Component {
                                 </h2>
                             </div>
                             <div className="row">
-                                <div className="testi-content testi-carousel owl-carousel">
+                                <div className="testi-content">
                                     <div className="testi-item text-center">
                                         <i className="testi-icon fa fa-3x fa-quote-left"></i>
                                         <h4 className="testi-text"><b>ROXY</b> is best theme i used so far.<br /> It’s ideal for guys without coding knowledge like me!</h4>
                                         <div className="testi-meta-inner d-flex justify-content-center align-items-center">
                                             <div className="testi-img mr-2">
-                                                <img src="img/testi-1.jpg" alt="" />
+                                                <img src={testi} alt="" />
                                             </div>
                                             <div className="testi-details">
                                                 <p className="testi-author mb-0 font-weight-bolder">John Doe</p>
@@ -199,7 +199,7 @@ export default class Page extends Component {
                                         <h4 className="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci <br /> non doloribus ut, alias doloremque perspiciatis.</h4>
                                         <div className="testi-meta-inner d-flex justify-content-center align-items-center">
                                             <div className="testi-img mr-2">
-                                                <img src="img/testi-1.jpg" alt="" />
+                                                <img src={testi} alt="" />
                                             </div>
                                             <div className="testi-details">
                                                 <p className="testi-author mb-0 font-weight-bolder">John Doe</p>
@@ -207,12 +207,12 @@ export default class Page extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="testi-item text-center">
+                                    <div className="testi-item testi-section text-center">
                                         <i className="testi-icon fa fa-3x fa-quote-left"></i>
                                         <h4 className="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci <br /> non doloribus ut, alias doloremque perspiciatis.</h4>
                                         <div className="testi-meta-inner d-flex justify-content-center align-items-center">
                                             <div className="testi-img mr-2">
-                                                <img src="img/testi-1.jpg" alt="" />
+                                                <img src={testi} alt="" />
                                             </div>
                                             <div className="testi-details">
                                                 <p className="testi-author mb-0 font-weight-bolder">John Doe</p>
@@ -225,8 +225,8 @@ export default class Page extends Component {
                         </div>
                     </div>
                 </section>
-
-                <section id="portfolio" className="bg-white">
+                {/* Portfolio */}
+                {/* <section id="portfolio" className="bg-white">
                     <div className="container">
                         <div className="section-content">
                             <div className="title-wrap">
@@ -362,7 +362,7 @@ export default class Page extends Component {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <section id="client" className="overlay bg-fixed">
                     <div className="container">
