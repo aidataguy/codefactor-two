@@ -2,7 +2,7 @@
  * Roxy: Bootstrap template by GettTemplates.com
  * https://gettemplates.co/roxy
  */
-html, body {
+ html, body {
   width: 100%;
   overflow-x: hidden; }
 
@@ -136,6 +136,15 @@ section {
 .jumbotron-single h1 {
   font-size: 3rem !important; }
 
+.bg-fixed .overlay {
+  background-image: url('../images/bg.jpg');
+}
+.featurettes .overlay .bg-fixed{
+  background-image: url('../images/bg.jpg');
+}
+.section-padding{
+  background-image: url('../images/bg-white.jpg');
+}
 .overlay {
   color: #fff; }
   .overlay:before {
