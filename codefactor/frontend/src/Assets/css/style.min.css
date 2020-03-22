@@ -70,8 +70,14 @@ section {
   right: 0;
   left: 0;
   z-index: 11;
-  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
-
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86); 
+  background: #ff00cc;
+    /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #333399, #ff00cc);
+}
+  
 .navbar-brand {
   font-size: 40px;
   color: #000; }
@@ -722,8 +728,8 @@ section {
 /*==============================
 =            CLIENT            =
 ==============================*/
-.client-slider .owl-nav {
-  display: none; }
+.client-slider{
+  display: flex; }
 
 .client-slider .client-item {
   padding: 0 40px; }
@@ -747,7 +753,9 @@ section {
     z-index: 11; }
   #header-navbar {
     padding-top: 15px !important;
-    padding-bottom: 15px !important; }
+    padding-bottom: 15px !important; 
+  }
+    
   .navbar-transparent .navbar-collapse {
     background: #ff00cc;
     /* fallback for old browsers */

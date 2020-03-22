@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../Assets/vendor/bootstrap/bootstrap.min.css';
-import '../Assets/vendor/owlcarousel/owl.carousel.min.css';
+import '../Assets/vendor/select2/select2.min.css';
 import '../Assets/css/style.min.css';
 
 
@@ -8,7 +8,13 @@ export default class Header extends Component {
     componentDidMount() {
         const script = document.createElement("script")
         script.async = true;
-        script.src = "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"
+        script.src = "../Assets/js/app.min.js";
+        script.src = "../Assets/vendor/select2/select2.min.min.js";
+        script.src = "../Assets/vendor/stellar/jquery.stellar.js";
+        script.src = "../Assets/vendor/waypoint/waypoint.min.js";
+
+
+
     }
     render() {
         return (
